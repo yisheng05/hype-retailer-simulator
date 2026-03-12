@@ -24,7 +24,7 @@ To make the simulation feel real, I moved away from static numbers and toward dy
 ### 1. The Hype Equation ($H$)
 Hype isn't a feeling; in this model, it’s a quantifiable score. The simulator uses an **Aggregate Hype Score** calculated by combining marketing investment, scarcity levels, and a "Curation Intelligence Score" ($I$).
 
-$$H = \left( \frac{Marketing\_Budget}{500} + \frac{2000}{Scarcity} \right) \times I \times Activity\_Boosts$$
+$$H = \left( \frac{\text{Marketing Budget}}{500} + \frac{2000}{\text{Scarcity}} \right) \times I \times \text{Activity Boosts}$$
 
 We prioritized **TikTok Velocity** over Instagram aesthetics for intelligence signals because TikTok's "For You" page provides a higher-fidelity signal for **viral discovery**—a key requirement for forecasting demand in 2024.
 
@@ -35,7 +35,7 @@ The simulator also factors in **Edge AI (Anti-Bot Protection)**. High-tier prote
 
 ### 3. The Secondary Market Proxy (StockX Prediction)
 One of the most exciting features is the **StockX Prediction Model**. It uses a heuristic proxy to predict the resale premium of a product:
-$$Predicted\ Resale = Unit\_Price \times \left(1.0 + \frac{Hype\ Score}{100}\right)$$
+$$\text{Predicted Resale} = \text{Unit Price} \times \left(1.0 + \frac{\text{Hype Score}}{100}\right)$$
 This illustrates the direct correlation between the quality of your Pre-Drop curation and the eventual market desirability.
 
 ---

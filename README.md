@@ -15,14 +15,14 @@ This simulator replicates the business model of modern high-demand retail, where
 The simulation prioritizes **TikTok** as the primary intelligence signal due to its superior **viral discovery velocity** (hashtag growth and audio trends) compared to follower-based platforms like Instagram.
 
 *   **Intelligence Score ($I$):**
-    $$I = Trend\_Multiplier \times Influencer\_Multiplier \times (1 + \frac{Search\_Volume}{100})$$
+    $$I = \text{Trend Multiplier} \times \text{Influencer Multiplier} \times \left(1 + \frac{\text{Search Volume}}{100}\right)$$
     *   *Trend Multipliers:* Low (0.8x) to Explosive (2.5x).
     *   *Influencer Multipliers:* Organic (1.0x) to Elite (2.0x).
     *   *Search Intent:* A linear factor (0-100 index).
 
 ### 2. The Hype Equation ($H$)
 The final **Aggregate Hype Score** is a product of supply, investment, and curation intelligence:
-$$H = \left( \frac{Marketing\_Budget}{500} + \frac{2000}{Scarcity} \right) \times I \times Activity\_Boosts$$
+$$H = \left( \frac{\text{Marketing Budget}}{500} + \frac{2000}{\text{Scarcity}} \right) \times I \times \text{Activity Boosts}$$
 *   **Scarcity Rule:** Lower supply exponentially increases the base hype.
 *   **Activity Boosts:** Execute Influencer Campaign (1.5x), SMS Waitlist (1.2x), Social Teasers (1.3x).
 
@@ -35,14 +35,14 @@ $$H = \left( \frac{Marketing\_Budget}{500} + \frac{2000}{Scarcity} \right) \time
 
 ### 4. Financial P&L Breakdown
 The simulator calculates profitability using a standard retail model:
-*   **Actual Revenue:** $Units\_Sold \times Unit\_Price$
+*   **Actual Revenue:** $\text{Units Sold} \times \text{Unit Price}$
 *   **COGS (Cost of Goods Sold):** Modeled at **40% of the Unit Price** per unit sold.
-*   **Net Profit:** $Actual\ Revenue - Marketing\ Budget - COGS$
+*   **Net Profit:** $\text{Actual Revenue} - \text{Marketing Budget} - \text{COGS}$
 
 ### 5. StockX Prediction Model
 The "StockX Prediction" is a heuristic proxy mimicking real-world secondary market behavior:
-$$Predicted\ Resale = Unit\_Price \times \left(1.0 + \frac{Hype\ Score}{100}\right)$$
-This reflects how high social demand ($H$) and limited supply ($Scarcity$) drive market premiums on platforms like StockX.
+$$\text{Predicted Resale} = \text{Unit Price} \times \left(1.0 + \frac{\text{Hype Score}}{100}\right)$$
+This reflects how high social demand ($H$) and limited supply ($\text{Scarcity}$) drive market premiums on platforms like StockX.
 
 ---
 
@@ -84,7 +84,7 @@ To ensure a clean environment, use the provided virtual environment setup:
 ## 🚀 Future Roadmap
 - [ ] **Multi-Product Drops:** Manage a portfolio of products simultaneously.
 - [ ] **Dynamic Pricing AI:** Adjust prices in real-time based on waitlist growth.
-- [ ] **Global Region Support:** Simulate latency across different continents.
+- [ ] [] **Global Region Support:** Simulate latency across different continents.
 
 ---
 
